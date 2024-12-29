@@ -16,7 +16,7 @@ const ProfilePage = () => {
   // Handle scroll effects
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -126,7 +126,7 @@ const ProfilePage = () => {
             
             <h1 className="text-5xl font-bold mt-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 
                          text-transparent bg-clip-text animate-gradient">
-              Collins Munene
+              Collins Munene Developer
             </h1>
             <p className="text-xl text-gray-300 mt-2 flex items-center gap-2">
               <MapPin size={18} className="text-purple-400" /> Meru County, Kenya
